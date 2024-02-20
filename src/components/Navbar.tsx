@@ -38,11 +38,11 @@ function Navbar({ className }: { className?: string }) {
             <HoveredLink href="/uiux">UI/UX</HoveredLink>
           </div>
         </MenuItem>
-        <Link href={"/contact"}>
+        <Link href={"/projects"}>
           <MenuItem
             setActive={setActive}
             active={active}
-            item="Contact Us"
+            item="My Projects"
           ></MenuItem>
         </Link>
       </Menu>
