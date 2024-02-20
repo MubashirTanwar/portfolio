@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import NavbarDemo from "@/components/Navbar";
-
+import { BackgroundGradientAnimation } from "@/components/ui/background-gradient-animation";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -21,7 +21,10 @@ export default function RootLayout({
         <div className="relative w-full flex items-center justify-center">
         <NavbarDemo/>
         </div>
+        <BackgroundGradientAnimation>
         {children}
+        </BackgroundGradientAnimation>
+        
         </body>
     </html>
   );
